@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let heading=document.createElement("h1")
+       document.body.append(heading)
+       heading.innerHTML="This is Page #5"
+
+
+       let para=document.createElement("p")
+       document.body.append(para)
+       para.innerHTML="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla arcu vulputate lorem sollicitudin pellentesque. Praesent fermentum diam vitae justo placerat, sed vehicula mi lacinia. Sed pellentesque dui mollis neque dapibus molestie.  "
+
+       let div=document.createElement("div")
+       document.body.append(div)
+       div.classList.add("class","pagination")
+
+       let anchor1=document.createElement("a")
+       anchor1.setAttribute("href","page4.html")
+       anchor1.innerHTML="prev"
+
+
+
+       let anchor2=document.createElement("a")
+       anchor2.setAttribute("href","index.html")
+       anchor2.innerHTML="1"
+       
+
+
+       let anchor3=document.createElement("a")
+       anchor3.setAttribute("href","page2.html")
+       anchor3.innerHTML="2"
+
+
+       let anchor4=document.createElement("a")
+       anchor4.setAttribute("href","page3.html")
+       anchor4.innerHTML="3"
+
+
+       let anchor5=document.createElement("a")
+       anchor5.setAttribute("href","page4.html")
+       anchor5.innerHTML="4"
+
+       let anchor6=document.createElement("a")
+       anchor6.setAttribute("href","page5.html")
+       anchor6.innerHTML="5"
+       anchor6.setAttribute("class","active")
+
+       let anchor7=document.createElement("a")
+       anchor7.setAttribute("href","page5.html")
+       anchor7.innerHTML="next"
+
+       div.append(anchor1,anchor2,anchor3,anchor4,anchor5,anchor6,anchor7,)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
